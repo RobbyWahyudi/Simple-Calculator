@@ -82,7 +82,6 @@ main .buttons-box {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(5, 50px);
-  /* grid-template: repeat(50px) / 50px; */
   grid-area: auto;
   gap: 0.5rem;
 }
@@ -123,13 +122,21 @@ main .buttons-box button {
 main .buttons-box button.operator {
   background-color: #f4ac41;
   font-size: 1.3rem;
-  position: relative;
-  z-index: 1;
   color: #555a60;
 }
 
 main .buttons-box button:active {
   opacity: 0.5;
+}
+
+.buttons-box .reset,
+.buttons-box .plus-min,
+.buttons-box .percent {
+  color: #f4ab41;
+}
+
+.buttons-box .reset {
+  padding-inline: 12px;
 }
 
 @media screen and (max-width: 640px) {
